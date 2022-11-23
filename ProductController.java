@@ -38,6 +38,9 @@ public class ProductController {
 		} 	catch (Exception e) {
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+		/*RQ_1321_START*/
+		system.out.println("correction1");
+		/*RQ_1321_END*/
 	}
 	
 	@GetMapping("/readAll")
